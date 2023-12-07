@@ -5,7 +5,12 @@
     <title>Админка</title>
 </head>
 <body>
+    {% if is_admin %}
     <h1>Добро пожаловать, администратор</h1>
     <p>Здесь вы можете управлять сайтом.</p>
+    {% else %}
+    <h1>Access denied for non-administrative users</h1>
+    <p>You need to login as admin to access this part</p>
+    {% endif %}
 </body>
 </html>
