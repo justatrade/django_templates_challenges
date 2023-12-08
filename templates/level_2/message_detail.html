@@ -21,6 +21,18 @@
         “Anyone, from the most clueless amateur to the best cryptographer,
         can create an algorithm that he himself cannot break.” — Bruce Schneier
       </article>
+      <article>
+        <nav>
+          <ul>
+            <li><strong>{{message.author_nickname}}</strong></li>
+          </ul>
+          <ul>
+            <li>Likes: {{message.likes_num}}</li>
+            <li>Reposts: {{message.reposts_num}}</li>
+          </ul>
+        </nav>
+        “{{message.text}}” — {{message.author_nickname}}
+      </article>
     </main>
   </body>
 </html>
